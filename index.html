@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+    <div class="container text-center">
+      <input type="text" id="password" /><img
+        src="copy.png"
+        alt="copy icon"
+        width="20px"
+        height="20px"
+        id="copy"
+      /><br />
+      <span>size : </span>
+      <input
+        type="number"
+        min="0"
+        max="100"
+        value="0"
+        id="size"
+        class="right"
+        width="25px"
+      /><br /><br /><br />
+      <span>lowercase letters : </span>
+      <input type="checkbox" id="lowercase" class="right" /><br />
+      <span>uppercase letters : </span>
+      <input type="checkbox" id="uppercase" class="right" /><br />
+      <span>numbers : </span>
+      ><input type="checkbox" id="numbers" class="right" /><br />
+      <span>sepetial characters : </span>
+      <input type="checkbox" id="chars" class="right" /><br />
+      <button id="btn">Generate</button>
+      <p id="error">you need to check at leat one box</p>
+      <p id="success">copied!</p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
